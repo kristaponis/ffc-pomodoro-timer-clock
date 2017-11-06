@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="box text-center">
+            <h3>Pomodoro Timer</h3>
+            <div class="row mx-auto">
+                <p class="label">Break</p>
+                <p class="label">Session</p>
+            </div>
+            <div class="row mx-auto">
+                <input id="numB" type="number" value="5" min="1" max="120">
+                <input id="num" type="number" value="25" min="1" max="120">
+            </div>
+            <p id="timer">00:00</p>
+            <button id="start" class="btn bg">Session</button>
+            <button id="break" class="btn bg">Break</button>
+            <button id="reset" class="btn bg">Reset</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
